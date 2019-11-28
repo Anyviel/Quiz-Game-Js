@@ -32,19 +32,11 @@ window.questions = [
         correct: "A"
     },
     {
-        question: "Netorare é:",
-        imgSrc: "img/ntr.jpg",
-        choiceA: "Muito bom!",
-        choiceB: "Horrendo!!",
-        choiceC: "Uma MERDA!",
-        correct: "B"
-    },
-    {
         question: "Respeitar o PHP é necessário porquê:",
         imgSrc: "img/thinking.png",
         choiceA: "É uma ótima linguagem.",
         choiceB: "Quebra galho com Gamabiarra.",
         choiceC: "A Raquel gosta e é isso.",
         correct: "C"
-    },
+    }
 ].sort(() => Math.random() - 0.5).slice(0, 3); //Faz a randomização das questões.

@@ -69,6 +69,7 @@ function checkAnswer(answer) {
         wrongAnswer()
     }
     count = 0; // Reinicia o Counter para a próxima pergunta
+    renderCounter();
     if (actualQuestion < lastQuestion) {
         //Verifica a posição da questão
         actualQuestion++;
@@ -82,13 +83,11 @@ function checkAnswer(answer) {
 
 function correctAnswer() {
     document.getElementById(actualQuestion).classList.add('bg-correct');
-    renderCounter();
     //document.getElementById(actualQuestion).classList.remove('bg-wrong');
     //document.getElementById(actualQuestion).style.background = "#0f0";
 }
 function wrongAnswer() {
     document.getElementById(actualQuestion).classList.add('bg-wrong');
-    renderCounter();
     //document.getElementById(actualQuestion).classList.remove('bg-correct');
     //document.getElementById(actualQuestion).style.background = "#f00";
 }
@@ -108,5 +107,9 @@ function scoreRender() {
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
-    scoreDiv.innerHTML += "<button onclick=" + window.location + ">Roll Back</button>";
+    scoreDiv.innerHTML += "<button onclick='reloadGame()'>Roll Back</button>"
+}
+
+function reloadGame() {
+    window.location.reload(); // Reinicia o jogo.
 }
