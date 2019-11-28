@@ -161,3 +161,16 @@ body{
     font-weight: bold;
     text-align: center;
 }
+#scoreContainer button{
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 25px;
+    top:200px;
+    left:290px;
+    font-size: 1em;
+    text-align: center;
+    background-color: cyan;
+    border: none;
+    border-radius: 5px;
+}

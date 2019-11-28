@@ -108,4 +108,5 @@ function scoreRender() {
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
+    scoreDiv.innerHTML += "<button onclick=" + window.location + ">Roll Back</button>";
 }
