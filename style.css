@@ -116,6 +116,15 @@ body{
     padding:5px;
     text-align: right;
 }
+
+.bg-correct{
+    background: #0f0;
+}
+
+.bg-wrong{
+    background: #f00;
+}
+
 .acertos{
     width : 25px;
     height : 25px;

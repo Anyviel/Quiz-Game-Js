@@ -22,5 +22,29 @@ window.questions = [
         choiceB: "Outra Dimensão",
         choiceC: "Constelação de Athena",
         correct: "C"
-    }
-];
+    },
+    {
+        question: "Qual a MonGirl favorita do Akito?",
+        imgSrc: "img/hoii.png",
+        choiceA: "Arachne",
+        choiceB: "Shark Girl",
+        choiceC: "MonoEye",
+        correct: "A"
+    },
+    {
+        question: "Netorare é:",
+        imgSrc: "img/ntr.jpg",
+        choiceA: "Muito bom!",
+        choiceB: "Horrendo!!",
+        choiceC: "Uma MERDA!",
+        correct: "B"
+    },
+    {
+        question: "Respeitar o PHP é necessário porquê:",
+        imgSrc: "img/thinking.png",
+        choiceA: "É uma ótima linguagem.",
+        choiceB: "Quebra galho com Gamabiarra.",
+        choiceC: "A Raquel gosta e é isso.",
+        correct: "C"
+    },
+].sort(() => Math.random() - 0.5).slice(0, 3); //Faz a randomização das questões.

@@ -1,15 +1,3 @@
-const start = document.getElementById("start");
-const quiz = document.getElementById("quiz");
-const qImg = document.getElementById("qImg");
-const question = document.getElementById("question");
-const counter = document.getElementById("counter");
-const timerGauge = document.getElementById("timeGauge");
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-const progress = document.getElementById("progress");
-const scoreDiv = document.getElementById("scoreContainer");
-
 let lastQuestion = window.questions.length - 1;
 let actualQuestion = 0;
 
@@ -55,7 +43,8 @@ function renderCounter() {
         timerGauge.style.width = `${count * gaugeUnit}px`;
         count++;
     } else {
-        count = 0;
+        checkAnswer(false);
+        /*count = 0;
         wrongAnswer();
         if (actualQuestion < lastQuestion) {
             actualQuestion++;
@@ -63,7 +52,7 @@ function renderCounter() {
         } else {
             clearInterval(TIMER);
             scoreRender();
-        }
+        }*/
     }
 }
 
@@ -92,10 +81,16 @@ function checkAnswer(answer) {
 }
 
 function correctAnswer() {
-    document.getElementById(actualQuestion).style.background = "#0f0";
+    document.getElementById(actualQuestion).classList.add('bg-correct');
+    renderCounter();
+    //document.getElementById(actualQuestion).classList.remove('bg-wrong');
+    //document.getElementById(actualQuestion).style.background = "#0f0";
 }
 function wrongAnswer() {
-    document.getElementById(actualQuestion).style.background = "#f00";
+    document.getElementById(actualQuestion).classList.add('bg-wrong');
+    renderCounter();
+    //document.getElementById(actualQuestion).classList.remove('bg-correct');
+    //document.getElementById(actualQuestion).style.background = "#f00";
 }
 
 function scoreRender() {
