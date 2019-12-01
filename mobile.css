@@ -1,0 +1,31 @@
+@media (max-width:738px){
+    .general {
+        height: 65vh;
+    }
+    .container {
+        max-width: 320px;
+        max-height: 400px;
+        padding-bottom: 80px;
+    }
+    #start {
+        top: 50px;
+        left: calc(50% - 60px);
+    }
+    #qImg {
+        background: none;
+    }
+    #qImg img {
+        width: 100px;
+        height: 100px;
+    }
+    #question { 
+        width: 300px;
+    }
+    #question p {
+        width: 300px;
+    }
+    #choices {
+        width: 305px;
+        padding: 5px;
+    }
+}

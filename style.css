@@ -2,7 +2,15 @@ body{
     font-size: 20px;
     font-family: monospace;
 }
+.general{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 .container{
     margin : 20px auto;
     background-color: #000;

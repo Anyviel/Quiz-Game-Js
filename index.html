@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Answer Game</title>
 </head>
 
 <body>
-    <div class="container">
-        <div id="start">Let's Start!</div>
-        <div id="quiz" style="display: none;">
-            <div id="qImg"></div>
-            <div id="question">
-                <p>Pergunta</p>
+    <div class="general">
+        <div class="container">
+            <div id="start">Let's Start!</div>
+            <div id="quiz" style="display: none;">
+                <div id="qImg"></div>
+                <div id="question">
+                    <p>Pergunta</p>
+                </div>
+                <div id="timer">
+                    <div id="counter">10</div>
+                    <div id="stimeGauge"></div>
+                    <div id="timeGauge"></div>
+                </div>
+                <div id="choices">
+                    <div class="escolhas" onclick="checkAnswer('A')" id="A">A</div>
+                    <div class="escolhas" onclick="checkAnswer('B')" id="B">B</div>
+                    <div class="escolhas" onclick="checkAnswer('C')" id="C">C</div>
+                </div>
+                <div id="progress"></div>
             </div>
-            <div id="timer">
-                <div id="counter">10</div>
-                <div id="stimeGauge"></div>
-                <div id="timeGauge"></div>
-            </div>
-            <div id="choices">
-                <div class="escolhas" onclick="checkAnswer('A')" id="A">A</div>
-                <div class="escolhas" onclick="checkAnswer('B')" id="B">B</div>
-                <div class="escolhas" onclick="checkAnswer('C')" id="C">C</div>
-            </div>
-            <div id="progress"></div>
+            <div id="scoreContainer"></div>
         </div>
-        <div id="scoreContainer"></div>
-    </div>
+    </div>        
 </body>
 <script src="elements.js"></script>
 <script src="data.js"></script>
