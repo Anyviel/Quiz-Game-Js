@@ -1,31 +1,63 @@
 @media (max-width:738px){
     .general {
-        height: 65vh;
+        height: 90vh;
     }
     .container {
         max-width: 320px;
         max-height: 400px;
-        padding-bottom: 80px;
+        padding-bottom: 140px;
     }
     #start {
-        top: 50px;
+        top: 125px;
         left: calc(50% - 60px);
     }
     #qImg {
         background: none;
     }
     #qImg img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+        margin-left: 59%;
     }
     #question { 
         width: 300px;
     }
     #question p {
         width: 300px;
+        font-size: 12pt;
+        margin-top: 100px;
+        padding: 0;
+        
     }
     #choices {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         width: 305px;
         padding: 5px;
+        top: 0;
+        right: 0;
+        margin-top: 180px;
+    }
+    .escolhas {
+        padding: 4px;
+        margin: 5px;
+    }
+    #scoreContainer {
+        max-width: 320px!important;
+        height: 440px!important;
+        margin: 0;
+    }
+    #scoreContainer img {
+        top: 100px;
+        left: 130px;
+    }
+    #scoreContainer p {
+        top: 130px;
+        left: 148px;
+    }
+    #scoreContainer button {
+        top: 200px;
+        left: 95px;
     }
 }
