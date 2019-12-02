@@ -24,15 +24,14 @@ body{
 #start{
     font-size: 1.5em;
     font-weight: bolder;
-    word-break: break-all;
-    width:100px;
+    width:110px;
     height:150px;
     border : 2px solid #FB8B24;
     text-align: center;
     cursor: pointer;
     position: absolute;
     left:300px;
-    top:50px;
+    top:70px;
     color :  #FB8B24;
 }
 #start:hover{
@@ -143,7 +142,7 @@ body{
     margin-right : 5px;
 }
 #scoreContainer{
-    margin : 20px auto;
+    margin : 0 auto;
     background-color: rgb(105, 102, 102);
     opacity: 0.8;
     height: 300px;
