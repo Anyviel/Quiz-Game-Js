@@ -3,7 +3,7 @@ window.questions = [
         question: "Quem é este Cavaleiro?",
         imgSrc: "img/rans.png",
         choiceA: "Milo de Escorpião",
-        choiceB: "João da Quebrada",
+        choiceB: "Aldebaran de Touro",
         choiceC: "Aiolia de Peixes",
         correct: "A"
     },
@@ -22,14 +22,6 @@ window.questions = [
         choiceB: "Outra Dimensão",
         choiceC: "Constelação de Athena",
         correct: "C"
-    },
-    {
-        question: "Qual a MonGirl favorita do Akito?",
-        imgSrc: "img/hoii.png",
-        choiceA: "Arachne",
-        choiceB: "Shark Girl",
-        choiceC: "MonoEye",
-        correct: "A"
     },
     {
         question: "Respeitar o PHP é necessário porquê:",
